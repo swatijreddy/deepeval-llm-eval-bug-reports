@@ -1,0 +1,348 @@
+                                                                                      Test Results                                                                                       
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Test case                                                       ┃ Metric              ┃ Score                                                          ┃ Status ┃ Overall Success Rate ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━┩
+│ test_correctness                                                │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Correctness [GEval] │ 0.9 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The Actual Output accurately extracts and  │        │                      │
+│                                                                 │                     │ represents the factual claim from the Input. The title and     │        │                      │
+│                                                                 │                     │ summary correctly capture that a button has intermittent       │        │                      │
+│                                                                 │                     │ functionality issues, which directly aligns with the input     │        │                      │
+│                                                                 │                     │ statement 'this button doesn't work sometimes.' The output     │        │                      │
+│                                                                 │                     │ appropriately identifies missing information (steps to         │        │                      │
+│                                                                 │                     │ reproduce, expected behavior, actual behavior, severity, and   │        │                      │
+│                                                                 │                     │ priority) by marking them as 'Not specified — needs            │        │                      │
+│                                                                 │                     │ clarification,' which is factually accurate given the minimal  │        │                      │
+│                                                                 │                     │ input provided. All claims in the output are supported by or   │        │                      │
+│                                                                 │                     │ consistent with the input, with no contradictions detected.,   │        │                      │
+│                                                                 │                     │ error=None)                                                    │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_correctness                                                │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Correctness [GEval] │ 0.8 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The Actual Output accurately extracts and  │        │                      │
+│                                                                 │                     │ represents the key factual claims from the Input. The title,   │        │                      │
+│                                                                 │                     │ summary, and actual behavior sections correctly reflect that   │        │                      │
+│                                                                 │                     │ the submit button is greyed out and unclickable. The expected  │        │                      │
+│                                                                 │                     │ behavior is reasonable and logically inferred. However, the    │        │                      │
+│                                                                 │                     │ response appropriately notes that steps to reproduce are not   │        │                      │
+│                                                                 │                     │ specified in the Input, demonstrating accurate                 │        │                      │
+│                                                                 │                     │ cross-referencing. The severity and priority assignments are   │        │                      │
+│                                                                 │                     │ reasonable interpretations for a button functionality issue,   │        │                      │
+│                                                                 │                     │ though these are not explicitly stated in the Input. All       │        │                      │
+│                                                                 │                     │ claims in the Actual Output are either directly supported by   │        │                      │
+│                                                                 │                     │ or consistent with the Input provided., error=None)            │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_correctness[The form is not submitting when selecting xyz  │                     │                                                                │        │ 100.0%               │
+│ option(non mandatory field)]                                    │                     │                                                                │        │                      │
+│                                                                 │ Correctness [GEval] │ 0.8 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The Actual Output accurately extracts and  │        │                      │
+│                                                                 │                     │ represents the key factual claims from the Input. The title,   │        │                      │
+│                                                                 │                     │ summary, expected behavior, and actual behavior all correctly  │        │                      │
+│                                                                 │                     │ reflect that the form fails to submit when the 'xyz' option is │        │                      │
+│                                                                 │                     │ selected in a non-mandatory field. The output appropriately    │        │                      │
+│                                                                 │                     │ identifies the missing reproduction steps and assigns          │        │                      │
+│                                                                 │                     │ reasonable severity (Major) and priority (High) levels given   │        │                      │
+│                                                                 │                     │ the blocking nature of the issue. The only minor limitation is │        │                      │
+│                                                                 │                     │ that the output could have requested more specific details     │        │                      │
+│                                                                 │                     │ about the field type, error messages, or browser/environment   │        │                      │
+│                                                                 │                     │ context, but this does not constitute a factual inaccuracy.    │        │                      │
+│                                                                 │                     │ All claims in the Actual Output are supported by or consistent │        │                      │
+│                                                                 │                     │ with the Input provided., error=None)                          │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_correctness[Even after successfully registering and paying │                     │                                                                │        │ 100.0%               │
+│ the fee the syetem is not showing the confirmation page]        │                     │                                                                │        │                      │
+│                                                                 │ Correctness [GEval] │ 0.9 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The Actual Output accurately extracts and  │        │                      │
+│                                                                 │                     │ represents all key factual claims from the Input. The title,   │        │                      │
+│                                                                 │                     │ summary, steps to reproduce, expected behavior, and actual     │        │                      │
+│                                                                 │                     │ behavior all directly correspond to the user's report that     │        │                      │
+│                                                                 │                     │ 'the system is not showing the confirmation page' after        │        │                      │
+│                                                                 │                     │ 'successfully registering and paying the fee.' The claims are  │        │                      │
+│                                                                 │                     │ well-supported by the Input statement. Minor deduction is      │        │                      │
+│                                                                 │                     │ applied because the Actual Output adds interpretive elements   │        │                      │
+│                                                                 │                     │ (severity and priority classifications) that, while            │        │                      │
+│                                                                 │                     │ reasonable, are not explicitly stated in the Input and         │        │                      │
+│                                                                 │                     │ therefore represent minor inference beyond strict factual      │        │                      │
+│                                                                 │                     │ extraction., error=None)                                       │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_correctness                                                │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Correctness [GEval] │ 0.9 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The Actual Output accurately extracts and  │        │                      │
+│                                                                 │                     │ represents the key factual claim from the Input: that the app  │        │                      │
+│                                                                 │                     │ crashes when trying to reload the page. The title, summary,    │        │                      │
+│                                                                 │                     │ actual behavior, and expected behavior all correctly reflect   │        │                      │
+│                                                                 │                     │ this core issue. The response appropriately notes that steps   │        │                      │
+│                                                                 │                     │ to reproduce are not specified in the Input, showing awareness │        │                      │
+│                                                                 │                     │ of missing information. The severity and priority assignments  │        │                      │
+│                                                                 │                     │ are reasonable interpretations given the critical nature of an │        │                      │
+│                                                                 │                     │ application crash. All claims in the Actual Output are         │        │                      │
+│                                                                 │                     │ supported by or consistent with the Input provided.,           │        │                      │
+│                                                                 │                     │ error=None)                                                    │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_correctness                                                │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Correctness [GEval] │ 0.8 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The Actual Output accurately extracts and  │        │                      │
+│                                                                 │                     │ represents the key factual claim from the Input: the user is   │        │                      │
+│                                                                 │                     │ not receiving a confirmation email. The summary, expected      │        │                      │
+│                                                                 │                     │ behavior, and actual behavior sections are all factually       │        │                      │
+│                                                                 │                     │ supported by and consistent with the Input. The response       │        │                      │
+│                                                                 │                     │ appropriately identifies missing information (steps to         │        │                      │
+│                                                                 │                     │ reproduce need clarification) and assigns reasonable           │        │                      │
+│                                                                 │                     │ severity/priority levels based on the nature of the issue. The │        │                      │
+│                                                                 │                     │ only minor limitation is that the Output makes reasonable      │        │                      │
+│                                                                 │                     │ inferences about context (e.g., 'after an action on the web    │        │                      │
+│                                                                 │                     │ application') that are not explicitly stated in the Input,     │        │                      │
+│                                                                 │                     │ though these are logical and not contradictory., error=None)   │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_correctness                                                │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Correctness [GEval] │ 0.8 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The Actual Output accurately extracts and  │        │                      │
+│                                                                 │                     │ represents the factual claims from the Input. The title,       │        │                      │
+│                                                                 │                     │ summary, expected behavior, and actual behavior all correctly  │        │                      │
+│                                                                 │                     │ reflect what the user reported: password reset completed but   │        │                      │
+│                                                                 │                     │ new password not working for authentication. The severity and  │        │                      │
+│                                                                 │                     │ priority assignments are reasonable given the nature of the    │        │                      │
+│                                                                 │                     │ issue. The only minor shortcoming is that 'steps_to_reproduce' │        │                      │
+│                                                                 │                     │ is marked as 'Not specified — needs clarification,' which is   │        │                      │
+│                                                                 │                     │ appropriate given the sparse input, but this represents a      │        │                      │
+│                                                                 │                     │ limitation of the source data rather than an error in the      │        │                      │
+│                                                                 │                     │ output. All claims in the Actual Output are directly supported │        │                      │
+│                                                                 │                     │ by or consistent with the Input provided., error=None)         │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_hallucination                                              │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Hallucination       │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The score is 0.00 because the actual       │        │                      │
+│                                                                 │                     │ output perfectly aligns with the provided context. Both        │        │                      │
+│                                                                 │                     │ accurately describe the same intermittent button functionality │        │                      │
+│                                                                 │                     │ issue with no contradictions or unsupported claims detected.,  │        │                      │
+│                                                                 │                     │ error=None)                                                    │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_hallucination                                              │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Hallucination       │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The score is 0.00 because the actual       │        │                      │
+│                                                                 │                     │ output perfectly aligns with the provided context regarding    │        │                      │
+│                                                                 │                     │ the submit button's state (greyed out and non-clickable), with │        │                      │
+│                                                                 │                     │ no contradictions detected., error=None)                       │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_hallucination[The form is not submitting when selecting    │                     │                                                                │        │ 100.0%               │
+│ xyz option(non mandatory field)]                                │                     │                                                                │        │                      │
+│                                                                 │ Hallucination       │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The score is 0.00 because the actual       │        │                      │
+│                                                                 │                     │ output fully aligns with the provided context regarding the    │        │                      │
+│                                                                 │                     │ form submission issue with the xyz option. No contradictions   │        │                      │
+│                                                                 │                     │ were identified, and the additional structured details         │        │                      │
+│                                                                 │                     │ provided (title, summary, steps, expected/actual behavior,     │        │                      │
+│                                                                 │                     │ severity, priority) enhance clarity without introducing any    │        │                      │
+│                                                                 │                     │ factual inaccuracies., error=None)                             │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_hallucination[Even after successfully registering and      │                     │                                                                │        │ 100.0%               │
+│ paying the fee the syetem is not showing the confirmation page] │                     │                                                                │        │                      │
+│                                                                 │ Hallucination       │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The score is 0.00 because the actual       │        │                      │
+│                                                                 │                     │ output perfectly aligns with the provided context with no      │        │                      │
+│                                                                 │                     │ contradictions detected. Both sources consistently describe    │        │                      │
+│                                                                 │                     │ the same scenario: successful user registration and payment    │        │                      │
+│                                                                 │                     │ completion followed by a system failure to display the         │        │                      │
+│                                                                 │                     │ confirmation page., error=None)                                │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_hallucination                                              │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Hallucination       │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The score is 0.00 because the actual       │        │                      │
+│                                                                 │                     │ output perfectly aligns with the provided context. Both        │        │                      │
+│                                                                 │                     │ describe the identical issue of app crashes during page reload │        │                      │
+│                                                                 │                     │ with no contradictions present. The additional structured      │        │                      │
+│                                                                 │                     │ details (title, summary, steps, expected behavior, severity,   │        │                      │
+│                                                                 │                     │ priority) enhance clarity without introducing any factual      │        │                      │
+│                                                                 │                     │ inaccuracies., error=None)                                     │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_hallucination                                              │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Hallucination       │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The score is 0.00 because the actual       │        │                      │
+│                                                                 │                     │ output perfectly aligns with the provided context regarding    │        │                      │
+│                                                                 │                     │ the user not receiving a confirmation email, with no           │        │                      │
+│                                                                 │                     │ contradictions detected., error=None)                          │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_hallucination                                              │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Hallucination       │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The score is 0.00 because the actual       │        │                      │
+│                                                                 │                     │ output perfectly aligns with the provided context with no      │        │                      │
+│                                                                 │                     │ contradictions. Both accurately describe a password reset      │        │                      │
+│                                                                 │                     │ scenario where the new password fails to work for              │        │                      │
+│                                                                 │                     │ authentication, indicating the response is factually grounded  │        │                      │
+│                                                                 │                     │ and contains no hallucinated information., error=None)         │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_prompt_alignment                                           │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Prompt Alignment    │ 1.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ PASSED │                      │
+│                                                                 │                     │ (Anthropic), reason=The score is 1.00 because the LLM output   │        │                      │
+│                                                                 │                     │ perfectly follows the prompt instructions. It successfully     │        │                      │
+│                                                                 │                     │ structured the vague input into a well-organized JSON format   │        │                      │
+│                                                                 │                     │ with appropriate fields for a bug report, clearly marked       │        │                      │
+│                                                                 │                     │ missing information with 'Not specified — needs clarification' │        │                      │
+│                                                                 │                     │ where details weren't provided, and accurately captured the    │        │                      │
+│                                                                 │                     │ core issue. Excellent work!, error=None)                       │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_prompt_alignment                                           │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Prompt Alignment    │ 0.67 (threshold=0.5, evaluation                                │ PASSED │                      │
+│                                                                 │                     │ model=claude-haiku-4-5-20251001 (Anthropic), reason=The score  │        │                      │
+│                                                                 │                     │ is 0.67 because while the LLM correctly structured the bug     │        │                      │
+│                                                                 │                     │ report and accurately captured the core issue (greyed out,     │        │                      │
+│                                                                 │                     │ unclickable submit button), it violated the instruction to     │        │                      │
+│                                                                 │                     │ mark uncertain information as 'Not specified — needs           │        │                      │
+│                                                                 │                     │ clarification'. Instead, it assigned assumed values ('Major'   │        │                      │
+│                                                                 │                     │ severity and 'High' priority) that cannot be determined from   │        │                      │
+│                                                                 │                     │ the input alone. This represents a clear deviation from the    │        │                      │
+│                                                                 │                     │ prompt's guidance on handling ambiguous or missing             │        │                      │
+│                                                                 │                     │ information., error=None)                                      │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_prompt_alignment[The form is not submitting when selecting │                     │                                                                │        │ 100.0%               │
+│ xyz option(non mandatory field)]                                │                     │                                                                │        │                      │
+│                                                                 │ Prompt Alignment    │ 0.67 (threshold=0.5, evaluation                                │ PASSED │                      │
+│                                                                 │                     │ model=claude-haiku-4-5-20251001 (Anthropic), reason=The score  │        │                      │
+│                                                                 │                     │ is 0.67 because while the LLM successfully structured the bug  │        │                      │
+│                                                                 │                     │ report and accurately captured the core issue from the input,  │        │                      │
+│                                                                 │                     │ it violated the instruction to mark uncertain information with │        │                      │
+│                                                                 │                     │ 'Not specified — needs clarification'. Instead of inferring    │        │                      │
+│                                                                 │                     │ severity and priority levels that weren't provided in the      │        │                      │
+│                                                                 │                     │ input, these fields should have followed the same pattern used │        │                      │
+│                                                                 │                     │ for 'steps_to_reproduce'. This inconsistency in applying the   │        │                      │
+│                                                                 │                     │ uncertainty handling rule prevents a higher score, though the  │        │                      │
+│                                                                 │                     │ overall output quality and most fields remain well-aligned.,   │        │                      │
+│                                                                 │                     │ error=None)                                                    │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_prompt_alignment[Even after successfully registering and   │                     │                                                                │        │ 100.0%               │
+│ paying the fee the syetem is not showing the confirmation page] │                     │                                                                │        │                      │
+│                                                                 │ Prompt Alignment    │ 0.67 (threshold=0.5, evaluation                                │ PASSED │                      │
+│                                                                 │                     │ model=claude-haiku-4-5-20251001 (Anthropic), reason=The score  │        │                      │
+│                                                                 │                     │ is 0.67 because while the LLM successfully structured the bug  │        │                      │
+│                                                                 │                     │ report and accurately captured the core issue from the input,  │        │                      │
+│                                                                 │                     │ it violated the instruction to avoid inferring information not │        │                      │
+│                                                                 │                     │ explicitly provided. Specifically, the 'severity' and          │        │                      │
+│                                                                 │                     │ 'priority' fields were assigned definitive values ('Major' and │        │                      │
+│                                                                 │                     │ 'High') when these details were not mentioned in the           │        │                      │
+│                                                                 │                     │ input—they should have been marked as 'Not specified — needs   │        │                      │
+│                                                                 │                     │ clarification' instead. This represents a clear deviation from │        │                      │
+│                                                                 │                     │ the stated rules about handling ambiguous or missing           │        │                      │
+│                                                                 │                     │ information., error=None)                                      │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_prompt_alignment                                           │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Prompt Alignment    │ 0.67 (threshold=0.5, evaluation                                │ PASSED │                      │
+│                                                                 │                     │ model=claude-haiku-4-5-20251001 (Anthropic), reason=The score  │        │                      │
+│                                                                 │                     │ is 0.67 because the LLM made assumptions about severity and    │        │                      │
+│                                                                 │                     │ priority levels that weren't provided in the input. According  │        │                      │
+│                                                                 │                     │ to the instructions, these fields should have been marked as   │        │                      │
+│                                                                 │                     │ 'Not specified — needs clarification' rather than inferred as  │        │                      │
+│                                                                 │                     │ 'Critical' and 'High'. The output handles other fields         │        │                      │
+│                                                                 │                     │ appropriately, which prevents the score from being lower, but  │        │                      │
+│                                                                 │                     │ the unauthorized inference keeps it from being higher.,        │        │                      │
+│                                                                 │                     │ error=None)                                                    │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_prompt_alignment                                           │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Prompt Alignment    │ 0.67 (threshold=0.5, evaluation                                │ PASSED │                      │
+│                                                                 │                     │ model=claude-haiku-4-5-20251001 (Anthropic), reason=The score  │        │                      │
+│                                                                 │                     │ is 0.67 because the LLM made assumptions about severity and    │        │                      │
+│                                                                 │                     │ priority levels that weren't provided in the input. These      │        │                      │
+│                                                                 │                     │ fields should have been marked as 'Not specified — needs       │        │                      │
+│                                                                 │                     │ clarification' to stay true to the prompt, similar to how the  │        │                      │
+│                                                                 │                     │ 'steps_to_reproduce' field was correctly handled. The rest of  │        │                      │
+│                                                                 │                     │ the output accurately captured and structured the user's       │        │                      │
+│                                                                 │                     │ issue, which is why the score isn't lower., error=None)        │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_prompt_alignment                                           │                     │                                                                │        │ 100.0%               │
+│                                                                 │ Prompt Alignment    │ 0.67 (threshold=0.5, evaluation                                │ PASSED │                      │
+│                                                                 │                     │ model=claude-haiku-4-5-20251001 (Anthropic), reason=The score  │        │                      │
+│                                                                 │                     │ is 0.67 because while the LLM successfully captured and        │        │                      │
+│                                                                 │                     │ structured the core issue, it violated the instruction to mark │        │                      │
+│                                                                 │                     │ uncertain fields as 'Not specified — needs clarification'. The │        │                      │
+│                                                                 │                     │ 'severity' and 'priority' fields were assigned definitive      │        │                      │
+│                                                                 │                     │ values ('Major' and 'High') without sufficient evidence from   │        │                      │
+│                                                                 │                     │ the user's input to justify these assessments. These           │        │                      │
+│                                                                 │                     │ subjective determinations should have been left unspecified    │        │                      │
+│                                                                 │                     │ pending clarification, which would have improved alignment     │        │                      │
+│                                                                 │                     │ with the stated guidelines., error=None)                       │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_json_correctness                                           │                     │                                                                │        │ 0.0%                 │
+│                                                                 │ Json Correctness    │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ FAILED │                      │
+│                                                                 │                     │ (Anthropic), reason=The generated JSON is not valid because    │        │                      │
+│                                                                 │                     │ while all required fields are present with correct types, the  │        │                      │
+│                                                                 │                     │ values for 'steps_to_reproduce', 'expected', 'actual',         │        │                      │
+│                                                                 │                     │ 'severity', and 'priority' contain placeholder strings ('Not   │        │                      │
+│                                                                 │                     │ specified — needs clarification') instead of actual data.      │        │                      │
+│                                                                 │                     │ Although structurally valid JSON, it fails the schema's intent │        │                      │
+│                                                                 │                     │ by not providing meaningful content for critical bug report    │        │                      │
+│                                                                 │                     │ fields., error=None)                                           │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_json_correctness                                           │                     │                                                                │        │ 0.0%                 │
+│                                                                 │ Json Correctness    │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ FAILED │                      │
+│                                                                 │                     │ (Anthropic), reason=The generated Json is not valid because    │        │                      │
+│                                                                 │                     │ the 'steps_to_reproduce' array contains a single string value  │        │                      │
+│                                                                 │                     │ 'Not specified — needs clarification' instead of actual        │        │                      │
+│                                                                 │                     │ reproducible steps. While this technically matches the         │        │                      │
+│                                                                 │                     │ schema's array-of-strings structure, it violates the semantic  │        │                      │
+│                                                                 │                     │ requirement that this field should contain actionable,         │        │                      │
+│                                                                 │                     │ specific steps to reproduce the bug. The schema expects        │        │                      │
+│                                                                 │                     │ concrete procedural steps, not placeholder text indicating     │        │                      │
+│                                                                 │                     │ missing information., error=None)                              │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_json_correctness[The form is not submitting when selecting │                     │                                                                │        │ 0.0%                 │
+│ xyz option(non mandatory field)]                                │                     │                                                                │        │                      │
+│                                                                 │ Json Correctness    │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ FAILED │                      │
+│                                                                 │                     │ (Anthropic), reason=The generated Json is not valid because    │        │                      │
+│                                                                 │                     │ the 'steps_to_reproduce' array contains a single string value  │        │                      │
+│                                                                 │                     │ 'Not specified — needs clarification' instead of actual        │        │                      │
+│                                                                 │                     │ reproducible steps. While this technically matches the         │        │                      │
+│                                                                 │                     │ schema's array-of-strings structure, it violates the semantic  │        │                      │
+│                                                                 │                     │ requirement that this field should contain actionable,         │        │                      │
+│                                                                 │                     │ specific steps to reproduce the bug. The schema expects        │        │                      │
+│                                                                 │                     │ concrete procedural steps, not placeholder text indicating     │        │                      │
+│                                                                 │                     │ missing information., error=None)                              │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_json_correctness[Even after successfully registering and   │                     │                                                                │        │ 0.0%                 │
+│ paying the fee the syetem is not showing the confirmation page] │                     │                                                                │        │                      │
+│                                                                 │ Json Correctness    │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ FAILED │                      │
+│                                                                 │                     │ (Anthropic), reason=The generated Json is not a valid JSON     │        │                      │
+│                                                                 │                     │ because while all required fields ('title', 'summary',         │        │                      │
+│                                                                 │                     │ 'steps_to_reproduce', 'expected', 'actual', 'severity',        │        │                      │
+│                                                                 │                     │ 'priority') are present with correct data types matching the   │        │                      │
+│                                                                 │                     │ Expected Json Schema, the schema validation fails due to       │        │                      │
+│                                                                 │                     │ missing or invalid enum constraints on the 'severity' and      │        │                      │
+│                                                                 │                     │ 'priority' fields that are likely defined in the complete      │        │                      │
+│                                                                 │                     │ schema definition not shown here., error=None)                 │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_json_correctness                                           │                     │                                                                │        │ 0.0%                 │
+│                                                                 │ Json Correctness    │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ FAILED │                      │
+│                                                                 │                     │ (Anthropic), reason=The generated Json is not valid because    │        │                      │
+│                                                                 │                     │ while all required fields are present with correct types, the  │        │                      │
+│                                                                 │                     │ 'steps_to_reproduce' array contains a single string value 'Not │        │                      │
+│                                                                 │                     │ specified — needs clarification' instead of actual             │        │                      │
+│                                                                 │                     │ reproducible steps. According to the schema, this field should │        │                      │
+│                                                                 │                     │ be an array of strings describing concrete steps to reproduce  │        │                      │
+│                                                                 │                     │ the bug, not a placeholder indicating missing information.     │        │                      │
+│                                                                 │                     │ This violates the semantic intent of the schema requirement.,  │        │                      │
+│                                                                 │                     │ error=None)                                                    │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_json_correctness                                           │                     │                                                                │        │ 0.0%                 │
+│                                                                 │ Json Correctness    │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ FAILED │                      │
+│                                                                 │                     │ (Anthropic), reason=The generated Json is not a valid JSON     │        │                      │
+│                                                                 │                     │ because while all required fields are present and correctly    │        │                      │
+│                                                                 │                     │ typed, the 'steps_to_reproduce' array contains a single string │        │                      │
+│                                                                 │                     │ value 'Not specified — needs clarification' instead of actual  │        │                      │
+│                                                                 │                     │ reproducible steps. Although this technically conforms to the  │        │                      │
+│                                                                 │                     │ schema (array of strings), it violates the semantic intent of  │        │                      │
+│                                                                 │                     │ the schema by providing a placeholder rather than actionable   │        │                      │
+│                                                                 │                     │ steps, making it invalid for practical bug reporting           │        │                      │
+│                                                                 │                     │ purposes., error=None)                                         │        │                      │
+│                                                                 │                     │                                                                │        │                      │
+│ test_json_correctness                                           │                     │                                                                │        │ 0.0%                 │
+│                                                                 │ Json Correctness    │ 0.0 (threshold=0.5, evaluation model=claude-haiku-4-5-20251001 │ FAILED │                      │
+│                                                                 │                     │ (Anthropic), reason=The generated Json is not valid because    │        │                      │
+│                                                                 │                     │ while all required fields are present and correctly typed, the │        │                      │
+│                                                                 │                     │ 'steps_to_reproduce' array contains a single string value 'Not │        │                      │
+│                                                                 │                     │ specified — needs clarification' instead of actual             │        │                      │
+│                                                                 │                     │ reproducible steps. According to the schema, this field should │        │                      │
+│                                                                 │                     │ be an array of strings describing concrete steps to reproduce  │        │                      │
+│                                                                 │                     │ the bug, not a placeholder indicating missing information.     │        │                      │
+│                                                                 │                     │ This violates the semantic intent of the schema requirement.,  │        │                      │
+│                                                                 │                     │ error=None)                                                    │        │                      │
+│ Note: Use Confident AI with DeepEval to analyze failed test     │                     │                                                                │        │                      │
+│ cases for more details                                          │                     │                                                                │        │                      │
+└─────────────────────────────────────────────────────────────────┴─────────────────────┴────────────────────────────────────────────────────────────────┴────────┴──────────────────────┘
