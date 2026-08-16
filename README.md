@@ -166,7 +166,7 @@ deepeval-llm-eval-bug-reports
              
 ```
 
-## ⚠️ Known Limitations
+## 🔍 Key Finding
 
 - The **JSON Correctness** metric fails all 7 reports for the same reason: it doesn't like
   the placeholder text ("Not specified — needs clarification"), even though it usually admits
